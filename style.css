@@ -153,18 +153,15 @@ button {
   width: 100%;
 }
 
-.grid-part-1 {
-  display: grid;
-  row-gap: 30px;
-}
-
 .grid-part-1__text {
   font-size: 18px;
   line-height: 32px;
+  margin-bottom: 22px;
 }
 
 .hq {
   position: relative;
+  margin-bottom: 30px;
 }
 
 .hq__text {
@@ -189,4 +186,46 @@ button {
   width: 100%;
   height: 82px;
   font-size: 32px;
+}
+
+.grid-part-2 {
+  display: grid;
+  grid-template-columns: 270px auto repeat(2, 170px);
+  grid-template-rows: auto 222px auto;
+  gap: 30px;
+}
+
+.consider {
+  grid-column-end: span 2;
+  grid-row-end: span 2;
+}
+
+.big-cell {
+  position: relative;
+}
+
+.big-cell__text {
+  font-size: 48px;
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  color: white;
+  text-shadow: 0px 4px 0px #000000;
+}
+
+.consider .big-cell__text {
+  bottom: 16px;
+}
+
+.grid-part-2__text {
+  grid-column-end: span 2;
+  align-self: end;
+}
+
+.goal {
+  grid-column-end: span 2;
+}
+
+.goal .big-cell__text {
+  top: 16px;
 }
